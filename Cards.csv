@@ -1,0 +1,52 @@
+ID-Version;Title;Uniqueness;Type;Description
+000001-001;Throwing a party;2;Event;All players gain two life points. You gain an additional two life points.
+000002-001;I hate the world;3;Event;All other players lose one life point.
+000003-001;Medicine;3;Event;You gain three life points.
+000004-001;Poison;3;Event;Target player loses three life points.
+000005-001;Schadenfreude;3;Event;You gain one life point. Target player loses one life point.
+000006-001;Retreat, retreat!;1;Event;Reverse the turn order.
+000007-001;Who's turn was it?;1;Event;Rearrange the turn order in any order. The first player in the new turn order must not be you, unless this is the only possible rearrangement.
+000008-001;Precision strike;1;Meta;Target card on the main stack is discarded without effect.
+000009-001;Nothing to see here;2;Event;The card below this one on the main stack is discarded without effect.
+00000A-001;Painkiller;3;Event;The next time you would lose life points, you reduce the amount lost by one point. This effect lasts until to end of the game.
+00000B-001;Salt in the wound;3;Event;The next time target player would lose life points, you increase the amount lost by one point. This effect lasts to the end of the game.
+00000C-001;Hey, no recursion!;*;Meta;Begin a subgame of Meta. Each player starts with the top half of his remaining memory or the top 15 cards, whichever is less. When the subgame is finished, reshuffle the cards into your memory. The winner of the subgame can distribute two times the number of players as life point loss amongst the losers. If the game ended in a draw, all players lose two life points.
+00000D-001;Red or blue pill?;*;Meta;Choose two cards. Determined by equal random chance, one card is discarded without effect. The other card is doubled in effect. If this instruction makes no sense for the target card, it is replaced by a token „Target player loses three life points“ card, that is bound to you.
+00000E-001;Powerup;1;Meta;Increase all numerical values on target card by 50%, rounded to the nearest integer.
+00000F-001;Everyday I'm shuffling;1;Meta;Rearrange target stack in any order.
+000010-001;Last Words;1;Trigger;Activates before you are disabled.
+000011-001;You did what?;3;Trigger;Activates after target player plays a card.
+000012-001;Good Morning;3;Trigger;Activates at the beginning of a turn.
+000013-001;Good Evening;3;Trigger;Activates at the end of a turn.
+000014-001;Timeout!;2;Trigger;Activates before you lose life points.
+000015-001;I'm feeling great;3;Trigger;Activates after you gain life points.
+000016-001;We have gathered today;2;Trigger;Activates after target player is disabled.
+000017-001;Trapping the trapmaker;1;Trigger;Activates before target trigger stack is executed.
+000018-001;All it needs is a little push;*;Event;Activate all trigger stacks by all players. Determine a random execution order like you would determine the turn order.
+000019-001;Recycling is good;2;Event;Target player loses one life point. Whenever this card is discarded, put it on top of your memory instead. You can choose to discard it anyway.
+00001A-001;Create Lesser Undead;2;Event;Put target card in the graveyard on top of your memory. This cannot be a card of * uniqueness
+00001B-001;Keep thinking;3;Event;Draw two cards from your memory.
+00001C-001;I taught you and you taught me;2;Event;All players draw a card from their memory. You draw an additional card.
+00001D-001;Epiphany lost;1;Event;Draw five cards from your memory. Then discard any card.
+00001E-001;Pi steps forward, tau steps backward;3;Event;Target player draws a card, then discards any two cards.
+00001F-001;Create Greater Undead;1;Event;Put target card in the graveyard on the main stack under this card. This cannot be a card of * uniqueness
+000020-001;The old switcheroo;3;Meta;Switch the position of target two cards on a stack.
+000021-001;Evening the playing field;*;Event;Determine the arithmetic mean of all player's life points, rounded to the nearest integer. All players apply this as their new life point counter.
+000022-001;No emotional baggage;1;Event;Remove all cards on all graveyards permanently from the game.
+000023-001;Culling the Called;1;Trigger;Activates when a card of uniqueness * other than your own is executed.
+000024-001;Drop it or I'll make you;3;Event;Target player discards two cards. If they have less than two cards in their hand, they discard from the top of their memory instead.
+000025-001;The first will be the last;2;Meta;Reverse the order of target stack.
+000026-001;No shirt, no service;3;Meta;Put target card on the bottom of the stack.
+000027-001;Stealth;1;Event;Until the end of the turn, no trigger stack is activated.
+000028-001;I've been waiting for this;2;Trigger;Activates before target card is executed.
+000029-001;Deus Ex Machina;*;Event;Choose a card in your possession, but outside the game and put that card on top of your memory. 
+00002A-001;A glitch in the Matrix;*;Meta;Choose a card and rewrite one word on it. The new instructions cannot cause a direct paradox. If the new instructions make no longer any sense, the card is discarded without effect. This card can target itself. However, under normal rules the new instructions are not executed and the card is discarded afterwards.
+00002B-001;They always come back;2;Meta;Choose target card of uniqueness 2 or 3. After target card is executed, put it on a trigger stack, that is activated by a token Trigger card that reads „Activates at any time you wish. This causes you to lose a life point.“
+00002C-001;Delayed action;*;Meta;After all remaining Meta cards have been executed, remove all cards on the main stack from the game. At the beginning of the next turn, put them back in the same order as before. The player at turn still determines the beginning of the pushing stage.
+00002D-001;Schrödinger's condition;1;Trigger;When playing this card, choose two conditions of your choice. When one these conditions is met, it has a 50% chance of triggering. If it does not trigger, it automatically triggers when the other condition is met.
+00002E-001;Joker;1;Trigger;When playing this card, choose any condition. If this condition has a specific target, you still need to say that target aloud.
+00002F-001;Good for a second time;*;Trigger;Choose a Trigger card of uniqueness 1 or more in your hand and discard it. This card takes on the instructions of the discarded card with the additional text „This card is not discarded when activated the first time and remains on the activated stack. Discard it in any case after it was activated a second time.“
+000030-001;Powerup field;1;Event;All numerical values on all of your cards are increased by 15%, rounded to the nearest integer. This effect lasts to the end of the game.
+000031-001;Global Powerup field;1;Event;All numerical values on all cards are increased by 10%, rounded to the nearest integer. This effect lasts to the end of the game.
+000032-001;Point of view;*;Meta;Negate the effect on target card. This cannot cause you to win as a direct result or cause any player to lose as a direct result. If the card has no effect with a natural negatory, this card is discarded without effect.
+000033-001;If I had penny...;3;Event;Choose a Trigger card in your hand. Whenever that trigger would have activated put one token on a counter of the same name. At any time you can choose to remove three token from the counter and either gain one life point or draw a card from your memory
